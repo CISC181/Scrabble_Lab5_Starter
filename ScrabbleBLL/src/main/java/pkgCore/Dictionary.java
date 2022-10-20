@@ -223,6 +223,24 @@ public class Dictionary {
 
 	}
  
+	/**
+	 * GenerateWords - Overloaded GenerateWords, apply filter with given WordFilter
+	 * 
+	 * @author BRG
+	 * @version Lab #5
+	 * @since Lab #5
+	 * @param strLetters
+	 * @param WF
+	 * @return
+	 */
+	public ArrayList<Word> GenerateWords(String strLetters, WordFilter WF) {
+		
+		ArrayList<Word> arrGeneratedWords = this.GenerateWords(strLetters);
+
+		//TODO: Filter the generated words based on the WordFilter
+		return arrGeneratedWords;
+	}
+	
 
 	/**
 	 * GenerateWords - Public facing method. If you call this with a string, it will
