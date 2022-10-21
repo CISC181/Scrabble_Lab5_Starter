@@ -36,9 +36,11 @@ class DictionaryLab5Test {
 
 	@Test
 	public void TestWordFilter2() {
+		
 		Util.PrintStart(new Throwable().getStackTrace()[0].getMethodName());
 		Dictionary d = new Dictionary();
 		String strLetters = "CLASS";
+		
 		WordFilter WF = new WordFilter();
 		WF.setStrStartWith("L");
 		WF.setiLength(3);
